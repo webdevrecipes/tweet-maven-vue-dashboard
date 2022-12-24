@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue';
 
 import webfontDownload from 'vite-plugin-webfont-dl';
 import svgLoader from 'vite-svg-loader';
+import Components from 'unplugin-vue-components/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,6 +15,10 @@ export default defineConfig({
       'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap',
     ]),
     svgLoader(),
+    Components({
+      dirs: ['src/components/common'],
+      dts: false,
+    }),
   ],
   resolve: {
     alias: {
