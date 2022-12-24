@@ -1,1 +1,15 @@
-@import "_colors.scss"
+@import "_colors.scss";
+@import "_fonts.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: $regular-weight;
+    font-size: 1em;
+    color: $ebony-clay;
+}
