@@ -16,7 +16,7 @@ export default defineConfig({
     ]),
     svgLoader(),
     Components({
-      dirs: ['src/components/common'],
+      dirs: ['src/components/base'],
       dts: false,
     }),
   ],
