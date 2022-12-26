@@ -5,6 +5,7 @@ import Login from '@/views/Login.vue';
 import Account from '@/views/Account.vue';
 import Scheduler from '@/views/Scheduler.vue';
 import Sandbox from '@/views/Sandbox.vue';
+import Explore from '@/views/Explore.vue';
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: '/sandbox',
     name: 'Sandbox',
     component: Sandbox,
+  },
+  {
+    path: '/explore',
+    name: 'Explore',
+    component: Explore,
   },
 ];
 

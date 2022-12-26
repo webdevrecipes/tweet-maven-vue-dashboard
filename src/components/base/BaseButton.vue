@@ -21,6 +21,7 @@ defineProps({
   padding: 10px 16px;
   text-align: center;
   transition: background-color 0.5s ease;
+  font-size: 1rem;
 }
 
 .primary {
