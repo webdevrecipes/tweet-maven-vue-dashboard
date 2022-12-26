@@ -1,13 +1,20 @@
 <template>
-  <div>Login Screen</div>
-  <button @click="login">Login</button>
+  <div>
+    <div>Login Screen</div>
+    <base-button @click="login">Primary</base-button>
+  </div>
 </template>
 
 <script setup lang="ts">
+import BaseButton from '@/components/base/BaseButton.vue';
 import { loginWithTwitter } from '@/api/twitterApi';
 
 const login = async () => {
-  const response = await loginWithTwitter();
-  console.log(response);
+  try {
+    const response = await loginWithTwitter();
+    console.log(response);
+  } catch (e) {
+    console.log(e);
+  }
 };
 </script>
